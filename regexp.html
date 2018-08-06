@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    body {
+        background-color: grey;
+    }
+    
+    .main {
+        margin: auto;
+        margin-top: 100px;
+        width: 400px;
+        line-height: 3rem;
+    }
+    </style>
+    <script>
+    window.onload = function() {
+        var oReg = document.getElementById("reg");
+        var oTxt = document.getElementById("txt");
+        var oRes = document.getElementById("result");
+        var oButton = document.getElementById("btn");
+        oButton.onclick = function() {
+            var sReg = eval(oReg.value);
+            var sTxt = oTxt.value;
+            var result = sTxt;
+            oRes.value = result.replace(sReg, "");
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <label for="reg">正则表达：
+            <input id="reg" type="text" value="//gi">
+        </label>
+        <br>
+        <label for="txt">测试文本：
+            <input id="txt" type="text" value="abc123abc">
+        </label>
+        <br>
+        <label for="result">替换结果：
+            <input id="result" type="text" readonly>
+        </label>
+        <br>
+        <input id="btn" type="button" value="替换">
+    </div>
+</body>
+
+</html>

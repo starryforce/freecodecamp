@@ -1,0 +1,21 @@
+body {
+    background-color: #666;
+    padding: 20px 192px;
+}
+
+.g-container input {
+    display: block;
+    margin: 10px auto;
+}
+
+.m-searchbox {
+    margin: 368px auto;
+    padding: 10px;
+    border-radius: 50% 50%;
+    background-color: #aaf;
+    width: 200px;
+}
+
+.m-results li{
+    background-color:#415D87;
+}

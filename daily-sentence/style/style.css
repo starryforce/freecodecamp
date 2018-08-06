@@ -1,0 +1,82 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix {
+    /* 触发 hasLayout */
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+body {
+    background-color: #b8f4ff;
+    padding-top: 256px;
+}
+
+.container {
+    position: relative;
+    width: 768px;
+    min-height: 256px;
+    margin: auto;
+    background-color: #b8ffb8;
+    border-style: solid;
+    border-color: #ffb5a1;
+    border-radius: 1rem;
+    box-shadow: 0 0 300px 30px #ffb5a1;
+}
+
+blockquote {
+    padding: 1rem 1rem 4rem;
+    color: #eb4f2f;
+    font-size:20px;
+}
+
+ul {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0.5rem 0;
+    list-style-type: none;
+}
+
+ul>li {
+    float: left;
+    font-size: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    transition: transform 2s,opacity 2s;
+}
+
+ul>li:hover {
+    transform: rotate(360deg);
+    opacity:0.8;
+}
+
+ul>button {
+    float: right;
+    font-size: 2rem;
+    margin-right: 1rem;
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+}

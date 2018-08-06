@@ -1,0 +1,32 @@
+body {
+    background: #26a0da;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(#26a0da, #314755, #26a0da);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(#26a0da, #314755, #26a0da);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.jumbotron {
+    margin: auto;
+    background-image: url("http://ww1.sinaimg.cn/large/72e668fcgy1fhhkw0vosij215o0tg7wh.jpg");
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 1500px;
+    height: 971px;
+}
+
+.m-main {
+    position: relative;
+    margin: 100px auto;
+    color: #eee;
+}
+
+.m-main h1 {
+    font-size: 4rem;
+}
+
+.m-main p {
+    font-size: 2rem;
+}
